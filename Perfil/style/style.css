@@ -1,0 +1,70 @@
+#imagenP{
+	text-align: center
+}
+#imagenPerfil{
+  height: 150px;
+  width: 150px;
+  margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+}
+.imagenPerfil{
+	margin-top: -257px;
+}
+/*div {
+	border: 2px solid;
+}*/
+.fotoportada {
+	border-radius: 30px;
+	width: 100%;
+}
+.tab a.active {
+	color: #2980B9 !important;
+}
+.tabs .tab a {
+	color: #233142;
+}
+.tabs .indicator {
+	background-color: #76E2F4;
+}
+.publicacion {
+	margin-left: 218.655px !important;
+	margin-top: 20px;
+}
+.tabs {
+	margin-left: 50px !important;
+	background-color: #F3F6F6 !important;
+}
+.perfil{
+	width: 150px;
+	border-radius: 20px;
+	border: 4px solid #FAFAFA;
+}
+.portada {
+	width: 100%;
+}
+.perfil2 {
+	margin-top: -150px;
+	margin-left: 50px !important;
+}
+body {
+	background-color: #F3F6F6;
+}
+.seguidos {
+	background-color: #FAFAFA;
+}
+.boton{
+	margin-top: 170px;
+	float: right;
+	margin-right: 200px;
+}
+.btn, .btn-large {
+	background-color: #30E3CA !important;
+}
+nav {
+	background-color: #11999E !important;
+}
+.logo_twitter {
+	height: 100%;
+	margin-left: 330px !important;
+}

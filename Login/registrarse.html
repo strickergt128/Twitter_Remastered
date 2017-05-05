@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html ng-app = "twitter">
+  <head>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-controller="remastered">
+
+    <div class="row login">
+      <div class="row titulo">
+        <div id="logo" class="col s6">
+          <img class="logo" src="Imagenes/logo_twitter.png" alt="">
+        </div>
+        <div id="tit" class="col s6">
+          <h5>Twitter</h5>
+        </div>
+      </div>
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input ng-model = "usuario.nombre" id="first_name" type="text" class="validate">
+            <label for="first_name">Nombre</label>
+          </div>
+          <div class="input-field col s6">
+            <input ng-model = "usuario.apellido" id="last_name" type="text" class="validate">
+            <label for="last_name">Apellido</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input ng-model = "usuario.correo" id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input ng-model = "usuario.contrasenia" id="password" type="password" class="validate">
+            <label for="password">Contraseña</label>
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col s6">
+          Recordar Mis Datos
+        </div>
+        <div class="col s6">
+          <div class="switch">
+            <label>
+              Off
+              <input type="checkbox">
+              <span class="lever"></span>
+              On
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row botones">
+        <div class="col s6">
+          <a href="../IniciarSesion.html" class="waves-effect waves-light btn">Iniciar Sesión</a>
+        </div>
+        <div class="col s6">
+          <div class="col s6">
+          <a  ng-click="guardar(usuario)" class="waves-effect waves-light btn">Registrarse</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBlQr_-r1yNxe3A5uIk9Nb3ccIoLj_v5RM",
+        authDomain: "twitter-remastered.firebaseapp.com",
+        databaseURL: "https://twitter-remastered.firebaseio.com",
+        projectId: "twitter-remastered",
+        storageBucket: "twitter-remastered.appspot.com",
+        messagingSenderId: "6110342475"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>

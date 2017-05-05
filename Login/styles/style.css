@@ -1,0 +1,32 @@
+.login{
+  width: 387px ;
+  height: 475px ;
+  margin-top: 155px;
+  background-color: white;
+  border-radius: 20px;
+}
+body{
+  background: url("../Imagenes/fondo2.jpg") no-repeat fixed;
+  -webkit-background-size:cover;
+	-o-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	text-align:center;
+  font-family: 'Hind Vadodara', sans-serif;
+}
+.logo{
+  width: 50px;
+}
+.titulo{
+  background-color: #BDC6B8;
+  border-radius: 20px;
+}
+#logo{
+  text-align: right;
+}
+#tit{
+  text-align: left;
+}
+.botones{
+  margin-top: 20px;
+}
